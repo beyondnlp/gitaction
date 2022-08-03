@@ -7,18 +7,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: print hello world 
+    - name: hello world 출력
       run: echo hello, world
-    - name: print directory
+    - name: directory 출력
       run: ls -al
-    - name : print python version
+    - name : python version 출력
       run: python -V
-    - name: check python package
+    - name: python package 확인
       run: pip list
-    - name: pip upgrade
+    - name: pip 업그레이드
       run: python -m pip install --upgrade pip
-    - name: install required package 
+    - name: 필요한 패키지 설치 
       run: pip install -r requirements.txt
     - uses: actions/checkout@v2
-    - name: execute python script
+    - name: 파이썬 스크립트 실행
       run: python test.py
