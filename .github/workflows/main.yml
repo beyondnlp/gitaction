@@ -13,6 +13,12 @@ jobs:
       run: ls -al
     - name : print python version
       run: python -V
+    - name: check python package
+      run: pip list
+    - name: pip upgrade
+      run: python -m pip install --upgrade pip
+    - name: install required package 
+      run: pip install -r requirements.txt
     - uses: actions/checkout@v2
     - name: execute python script
       run: python test.py
