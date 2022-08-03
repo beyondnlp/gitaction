@@ -1,5 +1,5 @@
 import requests
-from bs4 import BeatifulSoup
+from bs4 import BeautifulSoup
 
 url='https://ridibooks.com/category/new-releases/2200'
 
