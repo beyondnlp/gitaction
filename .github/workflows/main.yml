@@ -13,3 +13,6 @@ jobs:
       run: ls -al
     - name : print python version
       run: python -V
+    - uses: actions/checkout@v2
+    - name: execute python script
+      run: python test.py
